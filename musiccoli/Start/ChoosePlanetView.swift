@@ -17,7 +17,6 @@ struct ChoosePlanetView: View {
         playAudio()
     }
     
-    // 소리 재생 안됨 ㅠㅡㅜ
     mutating func playAudio() {
         
         let url = Bundle.main.url(forResource: "startBGM", withExtension: "m4a")
