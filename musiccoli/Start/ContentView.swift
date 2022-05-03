@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import AVKit
+import AVFoundation
 
 
 struct ContentView: View {
@@ -37,8 +39,13 @@ struct ContentView: View {
             .navigationTitle(" ")
             .navigationBarTitleDisplayMode(.inline)
             .simultaneousGesture(TapGesture().onEnded{
+                localMusicPlayer.localplayer.pause()
+                streamingMusicPlayer.instance.pause()
+                // 이전의 음원 재생 stop!
+                
                 localMusicPlayer.localplayer.playAudio()
                 // 다음 뷰로 넘어가도 재생 ok
+                // 왜 소리 안나지..? 
             })
         }
     }

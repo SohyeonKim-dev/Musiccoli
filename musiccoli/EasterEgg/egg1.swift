@@ -15,7 +15,7 @@ struct egg1: View {
             
             // 첫번째
             Section(
-                header: Text("💫금성의 노래")
+                header: Text("💫 금성의 노래")
                     .font(.system(size: 20))
                     .bold()
                     .foregroundColor(Color.black.opacity(0.8))

@@ -19,7 +19,7 @@ class localMusicPlayer {
     
     func playAudio() {
         
-        let url = Bundle.main.url(forResource: "startBGM", withExtension: "m4a")
+        let url = Bundle.main.url(forResource: "startBGM_1", withExtension: "m4a")
         
         if let url = url{
             do {

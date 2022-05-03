@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import AVKit
+import AVFoundation
 
 @main
 struct musiccoliApp: App {

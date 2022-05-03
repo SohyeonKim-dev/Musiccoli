@@ -24,7 +24,7 @@ struct ChoosePlanetView: View {
                 // 창 medium 배경
                 RoundedRectangle(cornerRadius: 20)
                     .fill(Color.white.opacity(0.3))
-                    .frame(width: 350, height: 350)
+                    .frame(width: 340, height: 350)
                 
                 VStack {
                     Text("🪐 오늘의 기분 행성은?")
