@@ -11,29 +11,6 @@ import AVFoundation
 
 struct ChoosePlanetView: View {
     
-    var soundEffect: AVAudioPlayer?
-    
-    init() {
-        playAudio()
-    }
-    
-    mutating func playAudio() {
-        
-        let url = Bundle.main.url(forResource: "startBGM", withExtension: "m4a")
-        
-        if let url = url{
-            do {
-                self.soundEffect = try AVAudioPlayer(contentsOf: url)
-                guard let sound = soundEffect else { return }
-                
-                //sound.prepareToPlay()
-                sound.play()
-            } catch let error {
-                print(error.localizedDescription)
-            }
-        }
-    }
-
     var body: some View {
         ZStack {
             
@@ -61,19 +38,26 @@ struct ChoosePlanetView: View {
                     
                     VStack {
                         NavigationLink(destination: PlayWarm_1(), label: {
+                            
                             ZStack {
                                 Text("금성")
                                     .font(.system(size: 20))
                                     .bold()
                                     .fontWeight(.light)
                                     .foregroundColor(.indigo)
-                            
+                                
                                 RoundedRectangle(cornerRadius: 20)
                                     .fill(Color.gray.opacity(0.2))
                                     .frame(width: 250, height: 60)
                                     .padding(3)
                             }
+                        }).simultaneousGesture(TapGesture().onEnded{
+                            localMusicPlayer.localplayer.pause()
+                            // 다음 뷰로 넘어가도 재생 ok
+                            streamingMusicPlayer.instance.initPlayer(url: "file:///Users/kimsohyeon/Desktop/music%20source/startBGM.m4a")
+                            streamingMusicPlayer.instance.play()
                         })
+                        
                         
                         NavigationLink(destination: PlayWarm_2(), label: {
                             ZStack {
@@ -114,7 +98,6 @@ struct ChoosePlanetView: View {
         .navigationBarTitleDisplayMode(.inline)
     }
 }
-
 
 struct ChoosePlanetView_Previews: PreviewProvider {
     static var previews: some View {

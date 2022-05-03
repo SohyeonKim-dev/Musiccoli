@@ -11,8 +11,8 @@ import AVFAudio
 import AVFoundation
 
 
-class MusicPlayer {
-    public static var instance = MusicPlayer()
+class streamingMusicPlayer {
+    public static var instance = streamingMusicPlayer()
     var player = AVPlayer()
 
     func initPlayer(url: String) {
@@ -21,6 +21,7 @@ class MusicPlayer {
         player = AVPlayer(playerItem: playerItem)
         playAudioBackground()
     }
+    
     
     func playAudioBackground() {
         do {
@@ -41,4 +42,3 @@ class MusicPlayer {
         player.play()
     }
 }
-

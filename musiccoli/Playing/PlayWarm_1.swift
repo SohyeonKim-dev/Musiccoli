@@ -3,8 +3,9 @@ import AVKit
 import AVFAudio
 import AVFoundation
 
-struct PlayWarm_1: View {
 
+struct PlayWarm_1: View {
+    
     var body: some View {
         
         ZStack {
@@ -57,10 +58,3 @@ struct PlayWarm_1_Previews: PreviewProvider {
         PlayWarm_1()
     }
 }
-
-
-var startMusic = MusicPlayer()
-
-startMusic.initPlayer(url: "https://www.dropbox.com/s/d9ziahemm1qykg9/startBGM.mp3")
-startMusic.playAudioBackground()
-startMusic.play()

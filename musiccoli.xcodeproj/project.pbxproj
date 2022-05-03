@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55494DAB2820D15E00094408 /* AudioPlayStreaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55494DAA2820D15E00094408 /* AudioPlayStreaming.swift */; };
+		55494DAF2820F38700094408 /* AudioPlayLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55494DAE2820F38700094408 /* AudioPlayLocal.swift */; };
 		554A999E281F5C1E009584C3 /* startBGM.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 554A999D281F5C1D009584C3 /* startBGM.m4a */; };
 		554A99A3281F73F9009584C3 /* PlayWarm_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A99A2281F73F9009584C3 /* PlayWarm_1.swift */; };
 		555C9C5A281EC52000CA4B38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555C9C59281EC52000CA4B38 /* ContentView.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55494DAA2820D15E00094408 /* AudioPlayStreaming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayStreaming.swift; sourceTree = "<group>"; };
+		55494DAE2820F38700094408 /* AudioPlayLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayLocal.swift; sourceTree = "<group>"; };
 		554A999D281F5C1D009584C3 /* startBGM.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = startBGM.m4a; sourceTree = "<group>"; };
 		554A99A2281F73F9009584C3 /* PlayWarm_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayWarm_1.swift; sourceTree = "<group>"; };
 		555C9C54281EC52000CA4B38 /* musiccoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = musiccoli.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +86,8 @@
 		555C9C56281EC52000CA4B38 /* musiccoli */ = {
 			isa = PBXGroup;
 			children = (
+				55494DAA2820D15E00094408 /* AudioPlayStreaming.swift */,
+				55494DAE2820F38700094408 /* AudioPlayLocal.swift */,
 				555C9C6A281ECDDD00CA4B38 /* EasterEgg */,
 				554A99A1281F73D2009584C3 /* Playing */,
 				555C9C69281ECDC400CA4B38 /* Start */,
@@ -198,6 +204,8 @@
 				554A99A3281F73F9009584C3 /* PlayWarm_1.swift in Sources */,
 				555C9C70281ECF1300CA4B38 /* musiccoliApp.swift in Sources */,
 				555C9C6E281ECE8A00CA4B38 /* ChoosePlanetView.swift in Sources */,
+				55494DAB2820D15E00094408 /* AudioPlayStreaming.swift in Sources */,
+				55494DAF2820F38700094408 /* AudioPlayLocal.swift in Sources */,
 				555C9C6C281ECE6000CA4B38 /* egg1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

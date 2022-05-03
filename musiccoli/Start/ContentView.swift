@@ -7,7 +7,9 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    
     var body: some View {
         NavigationView {
             
@@ -35,6 +37,10 @@ struct ContentView: View {
             .navigationBarHidden(false)
             .navigationTitle(" ")
             .navigationBarTitleDisplayMode(.inline)
+            .simultaneousGesture(TapGesture().onEnded{
+                localMusicPlayer.localplayer.playAudio()
+                // 다음 뷰로 넘어가도 재생 ok
+            })
         }
     }
     
