@@ -12,7 +12,6 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            
             ZStack {
                 Color.green.opacity(0.20)
                     .frame(width: 400, height: 1000)

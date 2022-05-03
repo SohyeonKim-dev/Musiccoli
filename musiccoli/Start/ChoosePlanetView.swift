@@ -52,11 +52,19 @@ struct ChoosePlanetView: View {
                                     .padding(3)
                             }
                         }).simultaneousGesture(TapGesture().onEnded{
+                            
                             localMusicPlayer.localplayer.pause()
+                            // start bgm을 멈춘다
+                            
                             streamingMusicPlayer.instance.pause()
-                            // 다음 뷰로 넘어가도 재생 ok
+                            // 기존의 streaming이 있다면 멈춘다.
+                            
                             streamingMusicPlayer.instance.initPlayer(url: "file:///Users/kimsohyeon/Desktop/music%20source/startBGM.m4a")
+                            // 플레이할 링크를 설정해준다.
+                            
                             streamingMusicPlayer.instance.play()
+                            // 원하는 플레이리스트를 재생한다.
+                            
                         })
                         
                         
@@ -73,6 +81,20 @@ struct ChoosePlanetView: View {
                                     .frame(width: 250, height: 60)
                                     .padding(3)
                             }
+                        }).simultaneousGesture(TapGesture().onEnded{
+                            
+                            localMusicPlayer.localplayer.pause()
+                            // start bgm을 멈춘다
+                            
+                            streamingMusicPlayer.instance.pause()
+                            // 기존의 streaming이 있다면 멈춘다.
+                            
+                            streamingMusicPlayer.instance.initPlayer(url: "file:///Users/kimsohyeon/Desktop/music%20source/startBGM.m4a")
+                            // 플레이할 링크를 설정해준다.
+                            
+                            streamingMusicPlayer.instance.play()
+                            // 원하는 플레이리스트를 재생한다.
+                            
                         })
                         
                         NavigationLink(destination: PlayWarm_3(), label: {
@@ -88,6 +110,20 @@ struct ChoosePlanetView: View {
                                     .frame(width: 250, height: 60)
                                     .padding(3)
                             }
+                        }).simultaneousGesture(TapGesture().onEnded{
+                            
+                            localMusicPlayer.localplayer.pause()
+                            // start bgm을 멈춘다
+                            
+                            streamingMusicPlayer.instance.pause()
+                            // 기존의 streaming이 있다면 멈춘다.
+                            
+                            streamingMusicPlayer.instance.initPlayer(url: "file:///Users/kimsohyeon/Desktop/music%20source/startBGM.m4a")
+                            // 플레이할 링크를 설정해준다.
+                            
+                            streamingMusicPlayer.instance.play()
+                            // 원하는 플레이리스트를 재생한다.
+                            
                         })
                     }
                     

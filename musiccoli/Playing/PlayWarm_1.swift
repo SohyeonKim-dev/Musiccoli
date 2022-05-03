@@ -49,7 +49,6 @@ struct PlayWarm_1: View {
             
         }
         .navigationBarTitleDisplayMode(.inline)
-        
     }
 }
 
