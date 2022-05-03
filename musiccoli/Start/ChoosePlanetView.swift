@@ -53,6 +53,7 @@ struct ChoosePlanetView: View {
                             }
                         }).simultaneousGesture(TapGesture().onEnded{
                             localMusicPlayer.localplayer.pause()
+                            streamingMusicPlayer.instance.pause()
                             // 다음 뷰로 넘어가도 재생 ok
                             streamingMusicPlayer.instance.initPlayer(url: "file:///Users/kimsohyeon/Desktop/music%20source/startBGM.m4a")
                             streamingMusicPlayer.instance.play()
