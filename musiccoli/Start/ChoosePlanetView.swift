@@ -59,7 +59,7 @@ struct ChoosePlanetView: View {
                             streamingMusicPlayer.instance.pause()
                             // 기존의 streaming이 있다면 멈춘다.
                             
-                            streamingMusicPlayer.instance.initPlayer(url: "file:///Users/kimsohyeon/Desktop/music%20source/startBGM.m4a")
+                            streamingMusicPlayer.instance.initPlayer(url: "file:///Users/kimsohyeon/Desktop/music%20source/music_file_1.mp3")
                             // 플레이할 링크를 설정해준다.
                             
                             streamingMusicPlayer.instance.play()
@@ -89,7 +89,7 @@ struct ChoosePlanetView: View {
                             streamingMusicPlayer.instance.pause()
                             // 기존의 streaming이 있다면 멈춘다.
                             
-                            streamingMusicPlayer.instance.initPlayer(url: "file:///Users/kimsohyeon/Desktop/music%20source/startBGM.m4a")
+                            streamingMusicPlayer.instance.initPlayer(url: "file:///Users/kimsohyeon/Desktop/music%20source/music_file_2.mp3")
                             // 플레이할 링크를 설정해준다.
                             
                             streamingMusicPlayer.instance.play()
@@ -118,7 +118,7 @@ struct ChoosePlanetView: View {
                             streamingMusicPlayer.instance.pause()
                             // 기존의 streaming이 있다면 멈춘다.
                             
-                            streamingMusicPlayer.instance.initPlayer(url: "file:///Users/kimsohyeon/Desktop/music%20source/startBGM.m4a")
+                            streamingMusicPlayer.instance.initPlayer(url: "file:///Users/kimsohyeon/Desktop/music%20source/music_file_3.mp3")
                             // 플레이할 링크를 설정해준다.
                             
                             streamingMusicPlayer.instance.play()

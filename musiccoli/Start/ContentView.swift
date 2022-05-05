@@ -45,7 +45,6 @@ struct ContentView: View {
                 
                 localMusicPlayer.localplayer.playAudio()
                 // 다음 뷰로 넘어가도 재생 ok
-                // 왜 소리 안나지..? 
             })
         }
     }
